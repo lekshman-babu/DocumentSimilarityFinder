@@ -34,12 +34,12 @@ for i in range(2,22):
         subject=fsoup.select('.tablecell.subjects')
         title=heading.text[6:]
         abstract=abs[0].text[10:]
-        abstract=abstract.replace('\n',"")
+        abstract=abstract.replace('\n'," ")
 
         #storing as a dictionary 
         extracted[title]={'abstract':abstract[2:],'subject':subject[0].text[1:].split(";")}
         print(title)
-        if(j==10):
+        if(j==1):
             break
     break
 
