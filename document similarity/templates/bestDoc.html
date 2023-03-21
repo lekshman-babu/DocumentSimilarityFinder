@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>best similarity finder</title>
+        <link rel="stylesheet" href="/static/bestDocStyle.css" />
+    </head>
+    <body>
+        <header>Best Similarity Finder</header>
+        <a href="{{url_for('webDeploy')}}"><img src="{{url_for('static',filename='homebutton.png')}}" alt="home" id="homeButton"></a>
+        <div id="inputContainer">
+            <p id="enter">enter the title</p>
+            <form action="/bestSimilarity" method="post">
+                <input type="text" name="Input" class="clusterInput" list="completeTitle" autocomplete="off">
+                <button type="submit" class="button">check</button>
+            </form>
+        </div>
+        <datalist id="completeTitle">
+            {%for title in allTitles%}
+              <option value="{{title}}"></option>
+            {%endfor%}
+        </datalist>
+        <div id="dataContainer">
+            <p class="clusterData">{{data}}</p>
+        </div>
+    </body>
+</html>

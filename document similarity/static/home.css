@@ -1,0 +1,42 @@
+header{
+    height: 100px;
+    text-align: center;
+    align-self: center;
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: 900;
+    box-shadow: 3px 3px 6px #00000041
+}
+
+#redirect1{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top:110px;
+    left: 474px;
+}
+#redirect2{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top:198px;
+    left:474px;
+}
+#about1{
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top:152px;
+    left:252px;
+}
+#about2{
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top:240px;
+    left:252px;
+}

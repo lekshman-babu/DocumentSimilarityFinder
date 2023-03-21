@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>document similarity checker</title>
+    <link rel="stylesheet" href="/static/2docSimilarity.css"/>
+  </head>
+  <body>
+    <header>
+      Document Similarity Checker
+    </header>
+    <a href="{{url_for('webDeploy')}}"><img src="{{url_for('static',filename='homebutton.png')}}" alt="home" id="homeButton"></a>
+    <div>
+    <p>
+      Enter The Titles
+    </p>
+    <form action="/2docSimilarity" method="post">
+      <input class="input1" type="text" name="first" list="completeTitle" autocomplete="off"/>
+      <input class="input2" type="text" name="second" list="completeTitle" autocomplete="off"/>
+      <button class="button" type="submit">check</button>
+    </form>
+    </div>
+    <datalist id="completeTitle">
+      {%for title in allTitles%}
+        <option value="{{title}}"></option>
+      {%endfor%}
+    </datalist>
+    <p id="ans">
+      {{similarityText}} <span id="number">{{similarity}}</span>
+    </p>
+  </body>
+</html>
