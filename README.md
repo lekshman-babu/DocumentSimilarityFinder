@@ -1,4 +1,3 @@
-```markdown
 # 📄 **DocumentSimilarityFinder – arXiv Paper Similarity & Best-Match Search**
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
@@ -232,4 +231,3 @@ See `LICENSE` for details.
 ---
 
 > 📚 *"Pick two papers → get similarity. Pick one paper → get its closest match." — DocumentSimilarityFinder*
-```
